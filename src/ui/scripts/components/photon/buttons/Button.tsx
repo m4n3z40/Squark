@@ -15,7 +15,7 @@ function addClassToPrefixIcons(totalChildren: number): innerAddClassToPrefixIcon
         if (typeof child === 'object' && child.type === Icon) {
             return cloneElement<IconProps, HTMLSpanElement>(
                 child as React.DOMElement<IconProps, HTMLSpanElement>,
-                {precedesText: totalChildren > 0 && index === 0}
+                {precedesText: totalChildren > 1 && index === 0}
             );
         }
 
